@@ -1,40 +1,271 @@
-/* --------Logo header */
-.logo {
-    color: #2E2F42;
-    font-family: Raleway;
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--navyblue, #2E2F42);
+}
+
+/* reset style start */
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.btm {
+    font-family: inherit;
+    cursor: pointer;
+    color: currentColor;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+}
+
+/* reset style end */
+.btm-dark-accent {
+    color: var(--white, #FFF);
+    background-color: var(--iris, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.btm-filters-first {
+    color: var(--white, #FFF);
+    text-align: center;
+    background-color: var(--ocean, #404BBF);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.btm-filters-second {
+    color: var(--iris, #4D5AE5);
+    text-align: center;
+    border: 1px solid var(--cornflower, #E7E9FC);
+    background-color: var(--cloud, #F4F4FD);
+}
+
+.btm-dark-accent:hover,
+.btm-dark-accent:focus {
+    border-radius: 4px;
+    background-color: var(--ocean, #404BBF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+/**
+  |============================
+  | Header styles 2 page
+  |============================
+*/
+.header {}
+
+.header-nav {}
+
+.header-logo,
+.footer-logo {
+    color: var(--navyblue);
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     width: 71px;
 }
 
-.logo :active {
-    color: var(--navyblue, #2E2F42);
-}
-
-.logo-name {
-    color: #4D5AE5;
+.header-logo-accent,
+.footer-logo-accent {
+    color: var(--iris, #4D5AE5);
     font-family: Raleway;
     font-size: 18px;
     font-weight: 800;
-    line-height: 21px;
-    letter-spacing: 0.54px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     width: 44px;
 }
 
-.logo-name :active {
-    color: var(--iris, #4D5AE5);
+.header-nav-list {}
+
+.header-nav-item {}
+
+.header-nav-link {
+    color: var(--navyblue);
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
-/* header link */
-.header-link {
-    color: var(--navyblue, #2E2F42);
-    font-family: Roboto;
-    font-size: 16px;
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-address-link:hover,
+.header-address-link:focus {
+    color: #404BBF;
+}
+
+.header-address {}
+
+.header-address-list {}
+
+.header-address-item {}
+
+.header-address-link {}
+
+/**
+  |============================
+  | Dark section
+  |============================
+*/
+.dark {
+    background-color: var(--navyblue, #2E2F42);
+}
+
+.dark-title {
+    color: var(--white, #FFF);
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | Advantages section
+  |============================
+*/
+.advantages {}
+
+.advantages-title {}
+
+.advantages-list {}
+
+.list {}
+
+.advantages-item {}
+
+.advantages-text {
+    color: var(--slate, #434455);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.advantages-subtitle {
+    color: var(--navyblue);
+    font-size: 20px;
     font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.32px;
+    letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | Team
+  |============================
+*/
+.Team {}
+
+.section-title {}
+
+.team-list {}
+
+.list {}
+
+.team-item {}
+
+.team-subtitle {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.team-text {
+    color: var(--slate, #434455);
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
+.footer {
+    background-color: var(--navyblue, #2E2F42);
+}
+
+.footer-logo {
+    color: var(--cloud, #F4F4FD);
+}
+
+.footer-text {
+    color: var(--cloud, #F4F4FD);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | btn filters section (portfolio)
+  |============================
+*/
+/**
+  |============================
+  | App section 
+  |============================
+*/
+.app {}
+
+.section-title {}
+
+.app-list {}
+
+.list {}
+
+.app-item {}
+
+.app-link {}
+
+.link {}
+
+.app-subtitle {}
+
+.app-text {}
+
+.oll-subtitle-portfolio {
+    color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.oll-text-portfolio {
+    color: var(--slate, #434455);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
