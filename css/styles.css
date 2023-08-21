@@ -175,11 +175,7 @@ img {
   |============================
 */
 .team {
-    background-color: var(--white);
-}
-
-.team-list {
-    background-color: var(--white);
+    background-color: var(--cloud);
 }
 
 .team-subtitle {
