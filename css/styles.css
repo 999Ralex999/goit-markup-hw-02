@@ -179,11 +179,11 @@ img {
 }
 
 .team-list {
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
 .team-item {
-    background-color: #FFFFFF
+    background-color: var(--white)
 }
 
 .team-subtitle {
