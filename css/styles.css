@@ -215,14 +215,16 @@ img {
 
 /**
   |============================
-  | btn filters section (portfolio)
+  | porfolia main
   |============================
 */
-/**
-  |============================
-  | App section 
-  |============================
-*/
+.portfolia-second-title {
+    color: var(--navyblue);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
 
 .portfolia-subtitle {
     color: var(--navyblue);
