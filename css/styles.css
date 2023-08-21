@@ -1,11 +1,28 @@
 /**
   |============================
+  | Root
+  |============================
+*/
+:root {
+    --navyblue: #2E2F42;
+    --cloud: #F4F4FD;
+    --white: #FFF;
+    --iris: #4D5AE5;
+    --ocean: #404BBF;
+    --cornflower: #E7E9FC;
+    --slate: #434455;
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: Raleway, sans-serif;
+}
+
+/**
+  |============================
   | Base styles
   |============================
 */
 body {
-    font-family: 'Roboto', sans-serif;
-    color: var(--navyblue, #2E2F42);
+    font-family: var(--main-font);
+    color: var(--navyblue);
 }
 
 /* reset style start */
@@ -40,29 +57,29 @@ img {
 
 /* reset style end */
 .btm-dark-accent {
-    color: var(--white, #FFF);
-    background-color: var(--iris, #4D5AE5);
+    color: var(--white);
+    background-color: var(--iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .btm-filters-first {
-    color: var(--white, #FFF);
+    color: var(--white);
     text-align: center;
-    background-color: var(--ocean, #404BBF);
+    background-color: var(--ocean);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .btm-filters-second {
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
     text-align: center;
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background-color: var(--cloud, #F4F4FD);
+    border: 1px solid var(--cornflower);
+    background-color: var(--cloud);
 }
 
 .btm-dark-accent:hover,
 .btm-dark-accent:focus {
     border-radius: 4px;
-    background-color: var(--ocean, #404BBF);
+    background-color: var(--ocean);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -80,14 +97,11 @@ img {
   | Header styles 2 page
   |============================
 */
-.header {}
-
-.header-nav {}
 
 .header-logo,
 .footer-logo {
     color: var(--navyblue);
-    font-family: Raleway, sans-serif;
+    font-family: var(--logo-font);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
@@ -98,8 +112,8 @@ img {
 
 .header-logo-accent,
 .footer-logo-accent {
-    color: var(--iris, #4D5AE5);
-    font-family: Raleway;
+    color: var(--iris);
+    font-family: var(--logo-font);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
@@ -108,13 +122,9 @@ img {
     width: 44px;
 }
 
-.header-nav-list {}
-
-.header-nav-item {}
-
 .header-nav-link {
     color: var(--navyblue);
-    font-family: Roboto;
+    font-family: var(--main-font);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -124,16 +134,8 @@ img {
 .header-nav-link:focus,
 .header-address-link:hover,
 .header-address-link:focus {
-    color: #404BBF;
+    color: var(--ocean);
 }
-
-.header-address {}
-
-.header-address-list {}
-
-.header-address-item {}
-
-.header-address-link {}
 
 /**
   |============================
@@ -141,11 +143,11 @@ img {
   |============================
 */
 .dark {
-    background-color: var(--navyblue, #2E2F42);
+    background-color: var(--navyblue);
 }
 
 .dark-title {
-    color: var(--white, #FFF);
+    color: var(--white);
     text-align: center;
     font-size: 56px;
     line-height: 1.07;
@@ -157,18 +159,9 @@ img {
   | Advantages section
   |============================
 */
-.advantages {}
-
-.advantages-title {}
-
-.advantages-list {}
-
-.list {}
-
-.advantages-item {}
 
 .advantages-text {
-    color: var(--slate, #434455);
+    color: var(--slate);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -185,15 +178,6 @@ img {
   | Team
   |============================
 */
-.Team {}
-
-.section-title {}
-
-.team-list {}
-
-.list {}
-
-.team-item {}
 
 .team-subtitle {
     color: var(--navyblue);
@@ -204,7 +188,7 @@ img {
 }
 
 .team-text {
-    color: var(--slate, #434455);
+    color: var(--slate);
     text-align: center;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -216,15 +200,15 @@ img {
   |============================
 */
 .footer {
-    background-color: var(--navyblue, #2E2F42);
+    background-color: var(--navyblue);
 }
 
 .footer-logo {
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
 }
 
 .footer-text {
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
@@ -239,23 +223,6 @@ img {
   | App section 
   |============================
 */
-.app {}
-
-.section-title {}
-
-.app-list {}
-
-.list {}
-
-.app-item {}
-
-.app-link {}
-
-.link {}
-
-.app-subtitle {}
-
-.app-text {}
 
 .oll-subtitle-portfolio {
     color: var(--navyblue);
@@ -265,7 +232,7 @@ img {
 }
 
 .oll-text-portfolio {
-    color: var(--slate, #434455);
+    color: var(--slate);
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
