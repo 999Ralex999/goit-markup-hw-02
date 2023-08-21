@@ -22,7 +22,8 @@
 */
 body {
     font-family: var(--main-font);
-    color: var(--navyblue);
+    color: var(--slate);
+    background-color: var(--white);
 }
 
 /* reset style start */
@@ -31,9 +32,7 @@ address {
 }
 
 img {
-    display: block;
     max-width: 100%;
-    height: auto;
 }
 
 .list {
@@ -52,21 +51,18 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    border-radius: 4px;
 }
 
 /* reset style end */
 .btm-dark-accent {
     color: var(--white);
     background-color: var(--iris);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .btm-filters-first {
     color: var(--white);
     text-align: center;
     background-color: var(--ocean);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .btm-filters-second {
@@ -78,9 +74,7 @@ img {
 
 .btm-dark-accent:hover,
 .btm-dark-accent:focus {
-    border-radius: 4px;
     background-color: var(--ocean);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .section-title {
@@ -100,18 +94,6 @@ img {
 
 .header-logo,
 .footer-logo {
-    color: var(--navyblue);
-    font-family: var(--logo-font);
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    width: 71px;
-}
-
-.header-logo-accent,
-.footer-logo-accent {
     color: var(--iris);
     font-family: var(--logo-font);
     font-size: 18px;
@@ -119,10 +101,20 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    width: 44px;
 }
 
-.header-nav-link {
+.header-logo-accent,
+.footer-logo-accent {
+    color: var(--navyblue);
+    font-family: var(--logo-font);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.header-nav-list .header-nav-link {
     color: var(--navyblue);
     font-family: var(--main-font);
     font-weight: 500;
@@ -203,7 +195,7 @@ img {
     background-color: var(--navyblue);
 }
 
-.footer-logo {
+.footer-logo-accent {
     color: var(--cloud);
 }
 
