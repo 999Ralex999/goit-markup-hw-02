@@ -178,6 +178,10 @@ img {
     background-color: var(--cloud);
 }
 
+.team-list {
+    background-color: #FFFFFF;
+}
+
 .team-subtitle {
     color: var(--navyblue);
     text-align: center;
